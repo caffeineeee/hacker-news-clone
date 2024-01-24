@@ -28,14 +28,12 @@ const DATA = [
 	},
 ];
 
-const color = "#FF6600";
-
-const font = "Verdana, Geneva,sans-serif";
-
 export default function Home() {
 	return (
 		<main className="flex min-h-screen flex-col items-center justify-between p-24">
-			s
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+			expedita eaque, aliquam id cum quae blanditiis, porro ipsam consequuntur
+			rerum illum odio, modi nisi officia autem numquam tempore fugiat veniam?
 		</main>
 	);
 }
