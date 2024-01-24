@@ -1,8 +1,8 @@
 "use client";
 
+import { Icons } from "@/components/icons";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Icons } from "../icons";
 
 export function Header() {
 	const router = useRouter();
@@ -41,6 +41,43 @@ export function Header() {
 				login
 			</a>
 		</header>
+	);
+}
+
+export function Footer() {
+	return (
+		<footer className="flex flex-col items-center justify-center border-t-2 border-[#FF6600] w-full h-24 mb-8">
+			<span className="flex flex-row space-x-2 text-[11px]">
+				<a href="/">Guidelines</a>
+				<DividerBorder />
+				<a href="/" className="text-neutral-500">
+					FAQ
+				</a>
+				<DividerBorder />
+				<a href="/">Lists</a>
+				<DividerBorder />
+				<a href="/">API</a>
+				<DividerBorder />
+				<a href="/">Security</a>
+				<DividerBorder />
+				<a href="/">Legal</a>
+				<DividerBorder />
+				<a href="/">Apply to YC</a>
+				<DividerBorder />
+				<a href="/">Contact</a>
+			</span>
+			<div>
+				<form action="" className="my-2 text-sm">
+					<span className="pr-1 text-neutral-500">Search:</span>
+					<input
+						type="text"
+						name="search"
+						id="search"
+						className="border border-neutral-500 w-36"
+					/>
+				</form>
+			</div>
+		</footer>
 	);
 }
 
