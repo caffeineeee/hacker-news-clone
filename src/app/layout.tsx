@@ -1,13 +1,6 @@
 import { Footer, Header } from "@/components";
 import type { Metadata } from "next";
-import { PT_Sans } from "next/font/google";
 import "./globals.css";
-
-const ptSans = PT_Sans({
-	subsets: ["latin"],
-	display: "swap",
-	weight: ["400", "700"],
-});
 
 export const metadata: Metadata = {
 	title: "Hacker News Clone",
@@ -21,8 +14,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={`${ptSans.className}`}>
-			<body>
+		<html lang="en">
+			<body style={{ fontFamily: "Verdana, Geneva, sans-serif" }}>
 				<div className="w-[85%] mt-2 mx-auto">
 					<Header />
 					{children}
