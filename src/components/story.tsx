@@ -20,7 +20,7 @@ export default function Story({
 
 	return (
 		<div className="flex flex-row items-center">
-			<div className="row-span-2 mb-5">
+			<div className="row-span-1">
 				<Icons.triangle
 					aria-hidden="true"
 					onClick={() => setVoted(!voted)}
@@ -54,7 +54,7 @@ export default function Story({
 						</span>
 					)}
 				</div>
-				<div className="flex flex-row text-[7pt] text-[#757575] row-span-1">
+				<span className="flex flex-row text-[9pt] md:text-[7pt] text-[#757575]">
 					{score} {plural(score, "point")}&nbsp;by&nbsp;
 					<span className="hover:underline cursor-pointer">{user}</span>&nbsp;
 					<Link href={`/item/${id}`}>
@@ -80,7 +80,7 @@ export default function Story({
 					<Link href={`/item/${id}`} className="hover:underline">
 						{commentsCount} {plural(commentsCount, "comment")}
 					</Link>
-				</div>
+				</span>
 			</div>
 		</div>
 	);
