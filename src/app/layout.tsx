@@ -16,7 +16,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body style={{ fontFamily: "Verdana, Geneva, sans-serif" }}>
-				<div className="w-[85%] mt-2 mx-auto">
+				<div className="w-full md:w-[85%] mt-0 md:mt-2 mx-auto">
 					<Header />
 					{children}
 					<Footer />
