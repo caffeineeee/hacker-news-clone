@@ -8,7 +8,6 @@
     <div style="font-size: 12pt; line-height: 0.5;">
         <p><b>Next.js</b>: Server-side rendering React components.</p>
         <p><b>TailwindCSS</b>: styling directly in the markup simpler.</p>
-        <p><b>Zod</b>: More Type-safe schema validation.</p>
         <p><b>Biome</b>: code formatter, linter.</p>
     </div>
 </div>
